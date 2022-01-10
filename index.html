@@ -1,61 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet.css">
-    <script src="./script.js"></script>
-    <title>cekdoc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./stylesheet.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <header>
-        <div class="header-logo"><img src="./img/logo.jpg" alt="not load"></div>
-        <div class="mainmenu">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Testimony</li>
-                <li>FAQ</li>
-                <li><button class="signup">Daftar Sekarang</button></li>                
-            </ul>
-        </div>
-    </header>
-    <body>
-        <div class="top-wrapper"></div>
-        <div class="mid-wrapper">
-            <div class="w3-container">
-                <div class="w3-grey w3-section" style="width: 25%;">
-                    <button onclick="serviceFunction('Serv1')" class="w3-button w3-block">Rapid Test</button>
-                    <div id="Serv1" class="w3-hide w3-container">
-                        <p>Mendeteksi resopn tubuh/antibodi terhadap virus COVID-19 di darah </p>
-                        <p>Bisa digunggu</p>
-                        <p>Rp 140.000</p>
-                        <button class="signupselected">Daftar</button>
-                    </div>
-                </div>
-                <div class="w3-grey w3-section" style="width: 25%;">
-                    <button onclick="serviceFucntion('Serv2')" class="w3-button w3-block">PCR</button>
-                    <div id="Serv2" class="w3-hide w3-container">
-                        <p>Mendeteksi bagian virus berupa protein yang ditemukan pada permukaan virus COVID-19 di hidung/tenggorokan</p>
-                        <p>Bisa digunggu</p>
-                        <p>Rp 200.000</p>
-                        <button class="signupselected">Daftar</button>
-                    </div>
-                </div>
-                <div class="w3-grey w3-section" style="width: 25%;">
-                    <button onclick="serviceFunction('Serv3')" class="w3-button w3-block">Home Care Test</button>
-                    <div id="Serv3" class="w3-hide w3-container">
-                        <p>Rapid test & PCR dengan tenaga medis langsung ke lokasi</p>
-                        <p>Mulai dari</p>
-                        <p>Rp 400.000</p>
-                        <button class="signupselected">Daftar][</button>
-                    </div>
-                </div>            
+        <div class="container">
+            <div class="header-left">
+                <img src="" alt="not found">
             </div>
         </div>
-    </body>
-    <footer></footer>
+        <div class="header-right">
+            <a href="#">Home</a>
+            <a href="#">Tentang</a>
+            <a href="#">Services</a>
+            <a href="#">Testimony</a>
+            <a href="#">FAQ</a>            
+            <button onclick="">Daftar Sekarang</button>
+        </div>
+    </header>
+<div class="top-wrapper">
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./img/slide1.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="/img/slide2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="/img/slide3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+</div>
+<div class="mid-wrapper">
+    <div class="services">
+        <div class="w3-container">
+            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">Rapid Test</button>
+            <div id="Demo1" class="w3-hide w3-container">
+                <p>Mendeteksi respon tubuh/antibodi terhadap virus COVID-19 di darah</p>
+                <p>Bisa ditunggu</p>
+                <p>Rp 140.000</p>
+            </div>
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">PCR</button>
+            <div id="Demo2" class="w3-hide w3-container">
+                <p>Mendeteksi bagian Virus berupa protein yang ditemukan pada permukaan virus COVID-19 di hidung/tenggorokan</p>
+                <p>Bisa ditunggu</p>
+                <p>Rp 200.000</p>
+            </div>
+            <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-black w3-left-align">Home Care Test</button>
+            <div id="Demo3" class="w3-hide w3-container">
+                <p>Rapid test & PCR dengan tenaga medis langsung ke lokasi</p>
+                <p>Mulai dari</p>
+                <p>Rp 400.000</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimony">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+            <img src="" alt="">
+        </button>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getelementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                </header>
+                <img src="" alt="">
+                <p>Petugas medisnya sangat profesional dan dapat menenangkan pasien</p>
+                <h2>Andi</h2>
+            </div>
+        </div>
+        <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black>
+        <img src="" alt="">
+        </button>
+        <div id="id02" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getelementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                </header>
+                <img src="" alt="">
+                <p>Pelayanan ramah bersih dan mengikuti protokol kesehatan</p>
+                <h2>Budi</h2>
+            </div>
+        </div>
+        <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-black>
+        <img src="" alt="">
+        </button>        
+        <div id="id03" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getelementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                </header>
+                <img src="" alt="">
+                <p>Petugasnya sigap mampu mengatasi agar tidak ada rasa sakit saat dilakukan test</p>
+                <h2>Rudi</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
 </body>
-</html>
+</html> 
